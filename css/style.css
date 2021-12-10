@@ -4,3 +4,14 @@
     box-sizing: border-box;
 }
 
+#main_wrapper {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 12fr 16fr 1fr;
+    grid-area: 
+    "he he he"
+    "nav nav as"
+    ""
+    
+    ;
+}
