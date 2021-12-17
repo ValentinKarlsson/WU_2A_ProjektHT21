@@ -6,12 +6,32 @@
 
 #main_wrapper {
     display: grid;
-    grid-template-columns: 6fr 1fr;
-    grid-template-rows: 12fr 16fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.75fr 1fr 5fr;
     grid-area: 
     "he he he"
-    "nav nav as"
-    ""
-    
+    "na na na"
+    "se se se"
+    "ar ar ar"
     ;
+}
+
+#main_wrapper>header {    
+    grid-area: he;
+    background: cadetblue;
+}
+
+#main_wrapper>nav {
+    grid-area: na;
+    background: chartreuse;
+}
+
+#main_wrapper>section {
+    grid-area: se;
+    background: chocolate;
+}
+
+#main_wrapper>article {
+    grid-area: ar;
+    background: crimson;
 }
