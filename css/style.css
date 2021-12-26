@@ -50,3 +50,72 @@ nav {
     grid-area: ar;
     background: crimson;
 }
+
+#wrapper_kontakta_oss {
+    display: grid;
+    grid-template-columns: 0.34fr 0.64fr 1fr 1.2fr 0.56fr;
+    grid-template-rows: 0.33fr 0.33fr 0.73fr 2.83fr 1fr;
+    grid-template-areas: 
+    "he he he he as1"
+    "na na na na as1"
+    "ar1 ar1 ar2 ar3 as1"
+    "ar1 ar1 ar2 ar3 as1"
+    "as2 ar4 ar5 ar3 as1"
+    ;
+    height: 100vh;
+    width: 100vw;
+}
+
+#wrapper_kontakta_oss > header {
+    grid-area: he;
+    background-color: lawngreen;
+}
+
+#wrapper_kontakta_oss > nav {
+    grid-area: na;
+    background-color: lightcoral;
+}
+
+#article_kontakter {
+    grid-area: ar1;
+    background-color: lightslategray;
+}
+
+#article_tider {
+    grid-area: ar2;
+    background-color: maroon;
+}
+
+#article_bilder {
+    grid-area: ar3;
+    background-color:mediumslateblue;
+}
+
+#aside_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: as2;
+    background-color: navy;
+}
+
+#aside_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: as1;
+    background-color: orange;
+}
+
+#article_4 {
+    grid-area: ar4;
+    background-color: orangered;
+}
+
+#article_5 {
+    grid-area: ar5;
+    background: palegoldenrod;
+}
+
