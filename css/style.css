@@ -119,3 +119,66 @@ nav {
     background: palegoldenrod;
 }
 
+#wrapper_meny {
+    display: grid;
+    grid-template-rows: 1fr 0.9fr 0.55fr 3.64fr 5.45fr 0.73fr;
+    grid-template-columns: 0.29fr 2.14fr 0.18fr 2.93fr 0.29fr 1fr;
+    grid-template-areas: 
+    "he he he he he he"
+    "na na na na na as"
+    ". . . . . as"
+    ". w2 . w3 . as"
+    ". w2 . w3 . as"
+    ". . . . . as"
+    ;
+    height: 100vh;
+    width: 100vw;
+}
+
+#wrapper_meny > header {
+    grid-area: he;
+    background-color: lawngreen;
+}
+
+#wrapper_meny > nav {
+    grid-area: na;
+    background-color: lightsalmon;
+}
+
+#section_wrapper_rätter {
+    display: grid;
+    grid-template-rows: 1fr 7.5fr 1fr 3fr;
+    grid-template-columns: 1fr 3.29fr;
+    grid-template-areas: 
+    ". he1"
+    "as se1"
+    ". he2"
+    "as se2"
+    ;
+    grid-area: w2;
+}
+
+#header_1 {
+    grid-area: he1;
+    background-color: lightblue;
+}
+
+#section_1 {
+    grid-area: se1;
+    background-color: lightpink;
+}
+
+#header_2 {
+    grid-area: he2;
+    background-color: lightslategrey;
+}
+
+#section_2 {
+    grid-area: se2;
+    background-color: mediumblue;
+}
+
+#section_wrapper_rätter > aside {
+    grid-area: as;
+    background-color: mediumspringgreen;
+}
