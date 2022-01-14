@@ -21,34 +21,54 @@
 h1 {
     display: flex;
     justify-content: center;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+img {
+    max-width: 90%;
+    max-height: 100%;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 #main_wrapper > header {    
     grid-area: he;
-    background: cadetblue;
 }
 
 #main_wrapper > nav {
     grid-area: na;
-    background: chartreuse;
 }
 
 #main_wrapper > section {
     grid-area: se;
-    background: chocolate;
 }
 
 #main_wrapper > article {
     grid-area: ar;
-    background: crimson;
 }
 
 #wrapper_kontakta_oss {
@@ -56,11 +76,11 @@ nav {
     grid-template-columns: 0.34fr 0.64fr 1fr 1.2fr 0.56fr;
     grid-template-rows: 0.33fr 0.33fr 0.73fr 2.83fr 1fr;
     grid-template-areas: 
-    "he he he he as1"
-    "na na na na as1"
-    "ar1 ar1 ar2 ar3 as1"
-    "ar1 ar1 ar2 ar3 as1"
-    "as2 ar4 ar5 ar3 as1"
+    "he he he he he"
+    "na na na na se1"
+    "ar1 ar1 ar2 ar3 se1"
+    "ar1 ar1 ar2 ar3 se1"
+    "se2 ar4 ar5 ar3 se1"
     ;
     height: 100vh;
     width: 100vw;
@@ -68,55 +88,66 @@ nav {
 
 #wrapper_kontakta_oss > header {
     grid-area: he;
-    background-color: lawngreen;
 }
 
 #wrapper_kontakta_oss > nav {
     grid-area: na;
-    background-color: lightcoral;
 }
 
 #article_kontakter {
-    grid-area: ar1;
-    background-color: lightslategray;
-}
-
-#article_tider {
-    grid-area: ar2;
-    background-color: maroon;
-}
-
-#article_bilder {
-    grid-area: ar3;
-    background-color:mediumslateblue;
-}
-
-#aside_2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    grid-area: as2;
-    background-color: navy;
-}
-
-#aside_1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    grid-area: as1;
-    background-color: orange;
+    grid-area: ar1;
+}
+
+#article_tider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: ar2;
+}
+
+#article_bilder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: ar3;
+}
+
+#section_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: se2;
+}
+
+#section_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: se1;
 }
 
 #article_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     grid-area: ar4;
-    background-color: orangered;
 }
 
 #article_5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     grid-area: ar5;
-    background: palegoldenrod;
 }
 
 #wrapper_meny {
@@ -125,11 +156,11 @@ nav {
     grid-template-columns: 0.29fr 2.14fr 0.18fr 2.93fr 0.29fr 1fr;
     grid-template-areas: 
     "he he he he he he"
-    "na na na na na as"
-    ". . . . . as"
-    ". w2 . w3 . as"
-    ". w2 . w3 . as"
-    ". . . . . as"
+    "na na na na na se"
+    ". . . . . se"
+    ". w2 . w3 . se"
+    ". w2 . w3 . se"
+    ". . . . . se"
     ;
     height: 100vh;
     width: 100vw;
@@ -137,48 +168,79 @@ nav {
 
 #wrapper_meny > header {
     grid-area: he;
-    background-color: lawngreen;
 }
 
 #wrapper_meny > nav {
     grid-area: na;
-    background-color: lightsalmon;
 }
 
-#section_wrapper_rätter {
+#div_wrapper_ratter {
     display: grid;
     grid-template-rows: 1fr 7.5fr 1fr 3fr;
     grid-template-columns: 1fr 3.29fr;
-    grid-template-areas: 
-    ". he1"
-    "as se1"
-    ". he2"
-    "as se2"
+    grid-template-areas:
+    "he1 he1"
+    "ar1 ar1"
+    "he2 he2"
+    "ar2 ar2"
     ;
     grid-area: w2;
 }
 
 #header_1 {
     grid-area: he1;
-    background-color: lightblue;
 }
 
-#section_1 {
-    grid-area: se1;
-    background-color: lightpink;
+#article_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: ar1;
 }
 
 #header_2 {
     grid-area: he2;
-    background-color: lightslategrey;
 }
 
-#section_2 {
-    grid-area: se2;
-    background-color: mediumblue;
+#article_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: ar2;
 }
 
-#section_wrapper_rätter > aside {
-    grid-area: as;
-    background-color: mediumspringgreen;
+#div_wrapper_bilder {
+    display: grid;
+    grid-template-rows: 1fr 6.4fr;
+    grid-template-columns: 1fr 4.9fr;
+    grid-template-areas: 
+    "head1 head1"
+    "arti1 arti1"
+    ;
+    grid-area: w3;
+}
+
+#div_wrapper_bilder > header {
+    grid-area: head1;
+}
+
+#div_wrapper_bilder > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: arti1;
+}
+
+#wrapper_meny > section {
+    grid-area: se;
+}
+
+#section_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
